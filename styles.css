@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2em;
+}
+
+legend {
+  padding-top: 1em;
+  text-align: center;
+}
+
+fieldset {
+  box-sizing: border-box;
+  border: none;
+  padding: 3em;
+  word-spacing: .15em;
+  text-align: center;
+}
+
+input{
+  box-sizing: border-box;
+  height: 2.5em;
+  width: 14em;
+  border-radius: .15em;
+}
+
+button {
+  background-color: #f44336;
+  padding: .25em .5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  border-radius: .15em;
+}   
+
+label{
+  padding-right: .5em;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+}
