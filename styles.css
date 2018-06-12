@@ -1,50 +1,77 @@
 * {
-  padding: 0;
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
-  text-align: center;
-  margin-top: 2em;
+    text-align: center;
+    margin-top: 2em;
 }
 
 legend {
-  padding-top: 1em;
-  text-align: center;
+    padding-top: 1em;
+    text-align: center;
 }
 
 fieldset {
-  box-sizing: border-box;
-  border: none;
-  padding: 3em;
-  word-spacing: .15em;
-  text-align: center;
+    box-sizing: border-box;
+    border: none;
+    padding: 3em;
+    word-spacing: .15em;
+    text-align: center;
 }
 
-input{
-  box-sizing: border-box;
-  height: 2.5em;
-  width: 14em;
-  border-radius: .15em;
+input {
+    box-sizing: border-box;
+    height: 2.5em;
+    width: 14em;
+    border-radius: .15em;
 }
 
 button {
-  background-color: #f44336;
-  padding: .25em .5em;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border: none;
-  border-radius: .15em;
-}   
-
-label{
-  padding-right: .5em;
+    background-color: #f44336;
+    padding: .25em .5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: .15em;
 }
 
-img{
+label {
+    padding-right: .5em;
+}
+
+.title-text {
     display: block;
-    margin: 0 auto;
+    height: 50px;
+    border: 1px solid red;
+    background-color: black;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    width: 80%;
+}
+
+.contain {
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    clear: right;
+    width: 33%;
+    height: 20%;
+    text-align: center;
+    position: relative;
+
+}
+
+
+.results {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    clear: both;
+    box-sizing: border-box;
 }

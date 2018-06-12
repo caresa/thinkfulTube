@@ -19,12 +19,15 @@ function renderResult(result) {
   //console.log(result);
   let item = result.snippet;
   return `
-    <div>
-      <h2>
-        <a class="js-result-name" href= "https://www.youtube.com/watch?v=${result.id.videoId}" target="_blank">${item.title}
+    <div class="contain">
+      <p class="title-text">${item.title}</p>
+      <br>
+      <a class="js-result-name" href= "https://www.youtube.com/embed/${result.id.videoId}" target="_blank" 
+        data-featherlight="iframe" data-featherlight-iframe-frameborder="0" 
+        data-featherlight-iframe-allow="autoplay; encrypted-media" data-featherlight-iframe-allowfullscreen="true" 
+        data-featherlight-iframe-style="display:block;border:none;height:85vh;width:85vw;">
           <img src="${item.thumbnails.medium.url}" alt="snippet title"/>
-        </a> 
-      </h2>
+      </a> 
     </div>
   `;
 }
@@ -39,6 +42,8 @@ function youTubeData (data) {
       } 
       else
       {
+        $('.title-text').hide();
+        $(document).find('.title-text').hide();
         $('.js-results').html(results); 
       }
 } 
@@ -62,4 +67,9 @@ function watchSubmit () {
   });
 }
 
+
+
 $(watchSubmit);
+//$(document).ready(function () {
+  //watchSubmit();
+//})
